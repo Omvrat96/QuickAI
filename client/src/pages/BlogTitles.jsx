@@ -50,7 +50,7 @@ const BlogTitles = () => {
           <h1 className='text-xl font-semibold'>AI title generator</h1>
         </div>
         <p className='mt-6 text-sm font-semibold '>Keyword</p>
-        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300' placeholder='Tell me about AI' required />
+        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300' placeholder='The future of artificial intelligence is...' required />
 
         <p className='mt-4 text-sm font-medium'> Category</p>
         <div className='mt-3 flex flex-wrap gap-3 sm:max-w-9/11'>
@@ -77,7 +77,7 @@ const BlogTitles = () => {
           <div className='flex-1 flex justify-center items-center'>
             <div className='text-sm flex flex-col items-center gap-5 text-gray-400'>
               <Hash className='w-9 h-9' />
-              <p>Enter a topic to generate title to start</p>
+              <p>Enter a topic and click “Generated title” to get started</p>
             </div>
           </div>
         ) : (
