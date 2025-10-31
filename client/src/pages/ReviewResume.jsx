@@ -53,7 +53,7 @@ const ReviewResume = () => {
         <p className='mt-6 text-sm font-semibold '>Upload resume</p>
         <input onChange={(e) => setInput(e.target.files[0])} type="file" accept='application/pdf' className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300 text-gray-600' required />
 
-        <p className='text-xs text-gray-500 font-light mt-1'>Supports pdf formats</p>
+        <p className='text-xs text-gray-500 font-light mt-1'>Supports PDF resume only.</p>
 
 
         <button className='w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#00DA83] to-[#009BB3]   text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer'>
@@ -74,7 +74,7 @@ const ReviewResume = () => {
             <div className='flex-1 flex justify-center items-center'>
           <div className='text-sm flex flex-col items-center gap-5 text-gray-400'>
             <FileText className='w-9 h-9' />
-            <p>Upload a resume to review</p>
+            <p>Upload a resume and click "Review Resume" to get started</p>
           </div>
 
         </div>
