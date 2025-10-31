@@ -9,7 +9,7 @@ const Hero = () => {
       
       <div className='text-center  mb-6'>
                       <h1 className='text-3xl sm:text-5xl md:text-6xl 2xl:text-7xl font-semibold mx-auto leading-[1.2]'>Create Amazing content <br /><span className='text-primary'>with AI</span></h1>
-                      <p className='mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-600'>Transform cotent creation ways by using AI to crete beautiful and enhaced conent with AI images</p>
+                      <p className='mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-600'>Transform content creation ways by using AI to crete beautiful and enhaced content with AI images</p>
                   </div>
                   <div className='flex flex-wrap justify-center gap-4 text-sm max-sm:text-xs'>
                       <button 
