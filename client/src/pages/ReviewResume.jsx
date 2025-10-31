@@ -48,7 +48,7 @@ const ReviewResume = () => {
         action="" className='w-full max-w-lg p-4 bg-white rounded-lg border border-gray-200'>
         <div className='flex items-center gap-3'>
           <Sparkles className='w-6 text-[#00DA83]' />
-          <h1 className='text-xl font-semibold'>Reusme Reviewer</h1>
+          <h1 className='text-xl font-semibold'>Resume Reviewer</h1>
         </div>
         <p className='mt-6 text-sm font-semibold '>Upload resume</p>
         <input onChange={(e) => setInput(e.target.files[0])} type="file" accept='application/pdf' className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300 text-gray-600' required />
