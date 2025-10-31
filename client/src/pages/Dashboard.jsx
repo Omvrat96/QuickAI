@@ -3,7 +3,7 @@ import { dummyCreationData } from '../assets/assets'
 import { Gem, Sparkles } from 'lucide-react'
 import { Protect } from '@clerk/clerk-react'
 import { useAuth } from '@clerk/clerk-react'
-import { CreationItem } from '../components/Creationitem'
+import CreationItem  from '../components/CreationItem'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
 
