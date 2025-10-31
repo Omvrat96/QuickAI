@@ -50,7 +50,7 @@ const GenerateImages = () => {
           <h1 className='text-xl font-semibold'>AI image generator</h1>
         </div>
         <p className='mt-6 text-sm font-semibold '>Describe image</p>
-        <textarea onChange={(e) => setInput(e.target.value)} rows={4} value={input} className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300' placeholder='Describe image' required />
+        <textarea onChange={(e) => setInput(e.target.value)} rows={4} value={input} className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300' placeholder='Describe what you want to see in the image..' required />
 
         <p className='mt-4 text-sm font-medium'> Style</p>
         <div className='mt-3 flex flex-wrap gap-3 sm:max-w-9/11'>
@@ -88,7 +88,7 @@ const GenerateImages = () => {
           <div className='flex-1 flex justify-center items-center'>
           <div className='text-sm flex flex-col items-center gap-5 text-gray-400'>
             <Image className='w-9 h-9' />
-            <p>Enter a topic to generate image to start</p>
+            <p>Enter a topic and click “Generate image ” to get started</p>
           </div>
 
         </div>
