@@ -56,7 +56,7 @@ const WriteArticle = () => {
           <h1 className='text-xl font-semibold'>Article Configuration</h1>
         </div>
         <p className='mt-6 text-sm font-semibold '>Article Topic</p>
-        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300' placeholder='Tell me about AI' required />
+        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" className='w-full p-2 mt-2 outline-none text-sm rounded-md border border-gray-300' placeholder='The future of artificial intelligence is...' required />
 
         <p className='mt-4 text-sm font-medium'>Article length</p>
         <div className='mt-3 flex flex-wrap gap-3 sm:max-w-9/11'>
