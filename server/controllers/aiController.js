@@ -4,12 +4,8 @@ import { clerkClient } from "@clerk/express";
 import {v2 as cloudinary} from 'cloudinary'
 import axios from "axios";
 import { useEffect } from "react";
-import fs from 'fs';
-// import pdf from "pdf-parse";
-import { PDFParse } from 'pdf-parse';
-
-
-
+import fs from 'fs'
+import pdf from 'pdf-parse/lib/pdf-parse.js'
 
 const AI = new OpenAI({
     apiKey: process.env.GEMINI_API_KEY,
@@ -63,6 +59,7 @@ export const generateArticle = async (req, res) => {
 
     }
 }
+
 
 export const generateBlogTitle = async (req, res) => {
 
@@ -238,14 +235,9 @@ export const resumeReview = async (req, res) => {
         }
 
         const dataBuffer = fs.readFileSync(resume.path)
-        
+        const pdfData = await pdf(dataBuffer)
 
-        const uint8Data = new Uint8Array(dataBuffer); 
-
-        const parser = new PDFParse(uint8Data); 
-        const result = await parser.getText();
-        await parser.destroy();
-        const prompt  = `review the resume and provide constructive feedback on its strength and improvement areas ${result.text}`
+        const prompt  = `review the resume and provide constructive feedback on its strength and improvement areas ${pdfData.text}`
 
         const response = await AI.chat.completions.create({
             model: "gemini-2.0-flash",
@@ -273,7 +265,3 @@ export const resumeReview = async (req, res) => {
 
     }
 } 
-
-
-
-
